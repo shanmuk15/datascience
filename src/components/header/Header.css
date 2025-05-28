@@ -1,0 +1,85 @@
+/* Basic header styling */
+.header {
+  display: flex;
+  justify-content: space-between; /* Distribute space between logo, menu, and icons */
+  align-items: center;
+  padding: 25px 20px;
+  background-color:#FDFDFD;
+  color: #000000;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;}
+
+.header h2 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: bold;
+  color:#065ebb;
+  padding-left: 25px;
+}
+
+.header ul {
+  display: flex;
+  list-style: none;
+  margin: 0px;
+  padding: 0;
+  gap: 30px;
+}
+
+.header ul li {
+  color: #000000;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+nav{
+  margin-right: 35px;
+}
+
+
+nav li:hover{
+ 
+ color: #065ebb;
+}
+
+.header span {
+  font-size: 24px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+/* Menu toggle button for mobile (initially hidden on large screens) */
+.menu-toggle {
+  display: none; 
+}
+
+/* Responsive design for small screens (mobile) */
+@media (max-width: 768px) {
+  .header ul {
+    display: none; /* Hide the links by default on mobile */
+  }
+
+ 
+    
+
+  .menu-toggle {
+    display: block; /* Show the menu toggle button on mobile */
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  /* Menu dropdown styling for mobile */
+  .menu-open ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px; /* Align the dropdown to the right side */
+    background-color: #FDFDFD;
+    padding: 10px;
+    gap: 10px;
+  }
+  
+}
