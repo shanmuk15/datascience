@@ -5,7 +5,7 @@ import Home from './components/Home/Home';
 import About from './components/about/About';
 import Contact from './components/contact/Contact';
 import Projects from './components/projects/Projects';
-import Header from './components/Header/Header';
+import Header from './components/headerc/Header';
 
 
 
